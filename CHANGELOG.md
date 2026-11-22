@@ -1,5 +1,16 @@
 # jest-extended
 
+## 7.1.0
+
+### Minor Changes
+
+- 128f4a9: Add a dedicated `jest-extended/vitest.js` entry point for Vitest 5 with compatible matcher declarations and registration types. It preserves Vitest's overlapping matchers and does not require Jest ambient types, a registration cast, or `skipLibCheck`.
+
+### Patch Changes
+
+- ef9d2c2: Fix `toBeInteger` throwing a TypeError for BigInt values.
+- f6bfebf: Fix `toBeNegative` to reject `-Infinity`, matching its documented behavior and `toBePositive`'s handling of `Infinity`.
+
 ## 7.0.0
 
 ### Major Changes
